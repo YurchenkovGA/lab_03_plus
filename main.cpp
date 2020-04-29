@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "histogram.h"
 using namespace std;
 
 vector<double> input_numbers(size_t count) {
@@ -9,19 +10,6 @@ vector<double> input_numbers(size_t count) {
     }
     return result;
 }
-void find_minmax(const vector<double>& numbers, double& min, double& max) {
-    min=numbers[0];
-    max=numbers[0];
-    for (size_t i=1; i<numbers.size(); i++)
-    {
-        if (min>numbers[i])
-        {
-            min=numbers[i];
-        }
-        if (max<numbers[i])
-        {
-            max=numbers[i];
-        }}}
 
 vector<size_t> make_histogram(const vector<double>& numbers, size_t bin_count){
     double min, max;
@@ -37,23 +25,6 @@ vector<size_t> make_histogram(const vector<double>& numbers, size_t bin_count){
     return count;
 }
 
-void show_histogram_text(const vector<size_t>& bins){
-    for (size_t bin: bins){
-        if (bin<10)
-            cout<<"  ";
-        else if (bin<100)
-            cout<<" ";
-        cout<<bin<<"|";
-
-            for(size_t i=0; i<bin; i++)
-            {
-                cout<<"*";
-            }
-
-        cout<<endl;
-
-
-}}
 
 void svg_begin(double width, double height) {
     cout << "<?xml version='1.0' encoding='UTF-8'?>\n";
@@ -89,7 +60,7 @@ double scaling(const vector<size_t>& bins, double block, double IMAGE_WIDTH  ){
 void show_histogram_svg(const vector<size_t>& bins) {
     const auto block= 10;
     const auto IMAGE_WIDTH = 820;
-    int BLOCK_WIDTH = scaling(bins, block, IMAGE_WIDTH);
+    double BLOCK_WIDTH = scaling(bins, block, IMAGE_WIDTH);
     const auto IMAGE_HEIGHT = 300;
     const auto TEXT_LEFT = 20;
     const auto TEXT_BASELINE = 20;
