@@ -17,5 +17,7 @@ double scaling(const vector<size_t>& bins, double block, double IMAGE_WIDTH  );
 
 void show_histogram_svg(const vector<size_t>& bins);
 
+size_t text_reflection_check (size_t IMAGE_WIDTH , size_t TEXT_WIDTH , size_t TEXT_LEFT);
+
 
 #endif // SVG_H_INCLUDED

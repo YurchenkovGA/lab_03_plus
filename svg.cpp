@@ -31,16 +31,20 @@ double scaling(const vector<size_t>& bins, double block, double IMAGE_WIDTH, dou
     block = ((IMAGE_WIDTH-TEXT_LEFT) /max);
     return block;
 }
+size_t text_reflection_check (size_t IMAGE_WIDTH , size_t TEXT_WIDTH , size_t TEXT_LEFT){
+    size_t text_reflection;
+    return text_reflection=IMAGE_WIDTH + TEXT_WIDTH - TEXT_LEFT;
+}
 void show_histogram_svg(const vector<size_t>& bins) {
     const auto block= 10;
-    const auto IMAGE_WIDTH = 820;
+    const auto IMAGE_WIDTH = 420;
     const auto TEXT_LEFT = 40;
     double BLOCK_WIDTH = scaling(bins, block, IMAGE_WIDTH, TEXT_LEFT);
     const auto IMAGE_HEIGHT = 300;
     const auto TEXT_BASELINE = 20;
     const auto TEXT_WIDTH = 10;
     const auto BIN_HEIGHT = (IMAGE_HEIGHT/bins.size());
-    size_t text_reflection = IMAGE_WIDTH + TEXT_WIDTH - TEXT_LEFT;
+    size_t text_reflection = text_reflection_check (IMAGE_WIDTH, TEXT_WIDTH , TEXT_LEFT);
     size_t histogram_reflection;
 
     svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);

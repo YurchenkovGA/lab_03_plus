@@ -6,16 +6,17 @@
 1588170433 c:\labs\lab_03_plus\project\histogram.h
 	<vector>
 
-1588154583 source:c:\labs\lab_03_plus\project\test.cpp
+1590395905 source:c:\labs\lab_03_plus\project\test.cpp
 	"histogram.h"
+	"svg.h"
 	<cassert>
 
-1588169592 source:c:\labs\lab_03_plus\project\svg.cpp
+1590395639 source:c:\labs\lab_03_plus\project\svg.cpp
 	<iostream>
 	<vector>
 	"svg.h"
 
-1588170529 c:\labs\lab_03_plus\project\svg.h
+1590395953 c:\labs\lab_03_plus\project\svg.h
 	<vector>
 	<iostream>
 

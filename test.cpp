@@ -49,8 +49,8 @@ void test_empty()
 void test_text_reflection()
 {
     size_t text_reflection;
-    show_histogram_svg({1,1,1});
-    assert(text_reflection == 0);
+    text_reflection=text_reflection_check(400,20,20);
+    assert(text_reflection == 400);
 }
 
 void test_histogram_reflection()
