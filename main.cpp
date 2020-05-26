@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cstdio>
 #include "histogram.h"
 #include "svg.h"
 using namespace std;
@@ -28,6 +29,11 @@ vector<size_t> make_histogram(const vector<double>& numbers, size_t bin_count){
 
 int main()
 {
+    const char* name = "Commander Shepard";
+    int year = 2154;
+    printf("%s was born in %d.\n", name, year);
+    printf("n = %08x\n", 0x123456869); // 01234567
+    return 0;
     size_t number_count;
     cerr<< "enter number count";
     cin>>number_count;
