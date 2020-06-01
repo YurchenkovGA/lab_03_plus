@@ -12,6 +12,8 @@ void svg_text(double left, double baseline, string text);
 
 void svg_rect(double x, double y, double width, double height,string stroke, string fill);
 
+size_t text_reflection_check (size_t IMAGE_WIDTH , size_t TEXT_WIDTH , size_t TEXT_LEFT);
+
 double scaling(const vector<size_t>& bins, double block, double IMAGE_WIDTH  );
 
 void show_histogram_svg(const vector<size_t>& bins);

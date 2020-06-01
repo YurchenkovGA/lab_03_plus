@@ -41,7 +41,7 @@ vector<size_t> make_histogram (const Input& data)
         }
         bins[bin]++;
     }
-    return bins;
+    return bins;}
 
 string make_info_text() {
     stringstream buffer;

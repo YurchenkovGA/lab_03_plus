@@ -28,8 +28,8 @@ vector<double> input_numbers(istream& in, size_t count) {
 Input read_input(istream& in, bool prompt, int  argc, char* argv[], bool flag_control) {
     Input data;
 
-int main()
-{
+
+
 
 
 
