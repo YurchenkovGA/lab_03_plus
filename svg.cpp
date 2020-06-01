@@ -28,7 +28,7 @@ double scaling(const vector<size_t>& bins, double block, double IMAGE_WIDTH, dou
             max=bin;
     }
 
-    block = ((IMAGE_WIDTH-TEXT_LEFT) /max);
+    block = ((IMAGE_WIDTH-TEXT_LEFT) / max );
     return block;
 }
 size_t text_reflection_check (size_t IMAGE_WIDTH , size_t TEXT_WIDTH , size_t TEXT_LEFT){
