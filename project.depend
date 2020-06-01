@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1591000271 source:c:\labs\lab_03_plus\project\main.cpp
 	<iostream>
 	<vector>
@@ -12,19 +13,49 @@
 	<ctime>
 
 1591000271 c:\labs\lab_03_plus\project\histogram.h
+=======
+1590528238 source:c:\labs\lab_03_plus\project\main.cpp
+	<iostream>
 	<vector>
+	<cstdio>
+	<string>
+	<sstream>
+	"histogram.h"
+	"svg.h"
+	<windows.h>
 
+1590528238 c:\labs\lab_03_plus\project\histogram.h
+>>>>>>> lab04-2
+	<vector>
+	<iostream>
+	<string>
+	<sstream>
+
+<<<<<<< HEAD
 1591000271 source:c:\labs\lab_03_plus\project\histogram.cpp
 	"histogram.h"
 	<vector>
 	<iostream>
 
 1591000271 source:c:\labs\lab_03_plus\project\svg.cpp
+=======
+1590528238 source:c:\labs\lab_03_plus\project\histogram.cpp
+	"histogram.h"
+	<vector>
+	<windows.h>
+
+1590528730 source:c:\labs\lab_03_plus\project\svg.cpp
+>>>>>>> lab04-2
 	<iostream>
 	<vector>
 	"svg.h"
+	"histogram.h"
 
+<<<<<<< HEAD
 1591000271 c:\labs\lab_03_plus\project\svg.h
+=======
+1590416787 c:\labs\lab_03_plus\project\svg.h
+>>>>>>> lab04-2
 	<vector>
 
 1587991348 c:\labs\lab_03_plus\project\curl\include\curl\curl.h

@@ -40,8 +40,6 @@
 		<Unit filename=".gitignore" />
 		<Unit filename="histogram.cpp" />
 		<Unit filename="histogram.h" />
-		<Unit filename="histogram_2.cpp" />
-		<Unit filename="histogram_2.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="svg.cpp" />
 		<Unit filename="svg.h" />

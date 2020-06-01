@@ -1,13 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <curl/curl.h>
-#include <sstream>
+#include <cstdio>
 #include <string>
+#include <sstream>
 #include "histogram.h"
 #include "svg.h"
 #include <stdlib.h>
 #include <cstdlib>
 #include <ctime>
+#include <windows.h>
+
 using namespace std;
 
 
@@ -21,8 +24,15 @@ vector<double> input_numbers(istream& in, size_t count) {
 
 
 
+
 Input read_input(istream& in, bool prompt, int  argc, char* argv[], bool flag_control) {
     Input data;
+
+int main()
+{
+
+
+
     size_t number_count;
     if (prompt)
     {

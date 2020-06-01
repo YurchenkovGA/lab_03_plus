@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "svg.h"
+#include "histogram.h"
 void svg_begin(double width, double height) {
     cout << "<?xml version='1.0' encoding='UTF-8'?>\n";
     cout << "<svg ";
@@ -45,9 +46,12 @@ void show_histogram_svg(const vector<size_t>& bins) {
 
     const auto TEXT_BASELINE = 20;
     const auto TEXT_WIDTH = 10;
-    const auto BIN_HEIGHT = (IMAGE_HEIGHT/bins.size());
+
     size_t text_reflection = text_reflection_check (IMAGE_WIDTH, TEXT_WIDTH , TEXT_LEFT);
     size_t histogram_reflection;
+
+    const auto BIN_HEIGHT = ((IMAGE_HEIGHT-100)/bins.size());
+
 
     svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
     double top = 0;
@@ -58,7 +62,10 @@ void show_histogram_svg(const vector<size_t>& bins) {
     svg_rect(histogram_reflection, top, bin_width, BIN_HEIGHT);
     svg_text(text_reflection, top + TEXT_BASELINE, to_string(bin));
 
+
+
     top += BIN_HEIGHT;
 }
+    svg_text(TEXT_LEFT+TEXT_WIDTH, top + TEXT_BASELINE, make_info_text());
     svg_end();
 }
